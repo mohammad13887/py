@@ -1,0 +1,22 @@
+import requests
+import datetime
+
+token = 'bot48967:28d19385-ff8e-47fe-af90-79fb42e26371'
+chat_id = 9422966
+
+x = 0
+while True:
+    x += 1
+    if x == 100000000:
+        x -= 100000000
+        now = datetime.datetime.now()
+        analog_time = now.strftime("%I:%M:%S")
+        g = ("Time:", analog_time)
+        c = requests.post(f"https://eitaayar.ir/api/bot48967:d6d4ae47-1232-42a9-b853-c194cb375991/sendMessage?chat_id=9422966&text={g}")
+        print(c)
+        
+        
+        
+    
+    
+        
